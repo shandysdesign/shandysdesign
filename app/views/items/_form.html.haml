@@ -1,0 +1,17 @@
+=form_for @item, :html => {:multipart=>true} do |f|
+  %div
+    %p
+      =f.label :name
+      =f.text_field :name
+    %p
+      =f.label :price
+      =f.text_field :price
+    %p=f.label :description
+    %p=f.text_area :description
+    %p
+      =f.label :status
+      =f.select :status,options_for_select(["Available","Reserved","Sold"])
+    %p
+      Photos
+      =file_field_tag 'item[assets_attributes][][image]', :multiple => true
+    %p=f.submit

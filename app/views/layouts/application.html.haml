@@ -11,8 +11,8 @@
       %div#logo=link_to image_tag("logo.png"), root_path
       %div#header_links
         %div.header_link=link_to image_tag("about.png")
-        %div.header_link=link_to image_tag("inventory.png")
+        %div.header_link=link_to image_tag("inventory.png"), items_path
         %div.header_link=link_to image_tag("contact.png")
         %div.clear
-    =yield 
+    %div#yield=yield 
 

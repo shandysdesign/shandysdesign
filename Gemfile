@@ -7,6 +7,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'haml-rails'
 
 gem 'devise'
+gem 'paperclip', '~> 3.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -28,14 +29,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+group :development do
+  gem 'thin'
+  gem 'debugger'
+  gem "rspec-rails"
+  gem 'capistrano', '2.15.5'
+end
 
-
-gem 'thin', group: :development
-
-# Use Capistrano for deployment
-gem 'capistrano', '2.15.5', group: :development
-
-# Use debugger
-gem 'debugger', group: [:development, :test]
+group :test do
+  gem "rspec-rails"
+  gem "factory_girl"
+end
