@@ -1,4 +1,8 @@
 class ItemsController < ApplicationController
+
+  before_filter :authenticate_user, :only => [:new, :edit, :create, :update]
+  before_filter :find_item, :only => [:show, :edit]
+
   def index
     @items = Item.all
   end
@@ -11,15 +15,31 @@ class ItemsController < ApplicationController
     @item = Item.create(item_params) 
     redirect_to @item
   end
+  
+  def edit
+  end
 
   def show
-    @item = Item.find(params[:id])
   end
+
+  def update
+    redirect_to items_path
+  end
+
 
   private
 
   def item_params
     params.require(:item).permit(:name,:price,:description,:status,:assets_attributes=>[:image])
+  end
+
+  def authenticate_user
+    redirect_to root_path unless user_signed_in?
+  end
+
+  def find_item
+    @item = Item.find(params[:id]) rescue nil
+    redirect_to items_path unless @item
   end
 
 end
