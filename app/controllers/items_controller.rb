@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   before_filter :authenticate_user, :only => [:new, :edit, :create, :update]
-  before_filter :find_item, :only => [:show, :edit]
+  before_filter :find_item, :only => [:show, :edit, :update]
 
   def index
     @items = Item.all
@@ -23,6 +23,7 @@ class ItemsController < ApplicationController
   end
 
   def update
+    @item.update_attributes(item_params)
     redirect_to items_path
   end
 

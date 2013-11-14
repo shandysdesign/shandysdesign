@@ -6,4 +6,9 @@ div.item {
     margin-right:10px;
   }
 }
-
+span.asset_id, span.item_id {
+  display:none;
+}
+span.delete_asset {
+  color:$red;
+}

@@ -27,4 +27,5 @@ module Shandysdesign
       g.test_framework :rspec, :fixture=>false
     end
   end
+
 end
