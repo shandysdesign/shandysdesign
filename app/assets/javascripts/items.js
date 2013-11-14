@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.delete_asset').click(function() {
+    $(document).on('click','.delete_asset',function(){
         var asset = $(this).parents('.asset')
         var asset_id = asset.find('.asset_id').html();
         var item_id = asset.find('.item_id').html();
@@ -14,7 +14,7 @@ $(document).ready(function() {
         return false;
     })
 
-    $('.radio_main').click(function() {
+    $(document).on('click','.radio_main',function(){
         var asset = $(this).parents('.asset')
         var asset_id = asset.find('.asset_id').html();
         var item_id = asset.find('.item_id').html();

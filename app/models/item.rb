@@ -6,5 +6,9 @@ class Item < ActiveRecord::Base
   def set_main_asset
     self.assets.first.update_attribute(:main,true)
   end
+
+  def main_asset
+    self.assets.where(main:true).first
+  end
 end
 
