@@ -7,7 +7,7 @@ a {
   color:$red;
 }
 html {
-  height:100%;
+  width:100%;
 }
 body {
   width:100%;
@@ -39,9 +39,7 @@ div.header_link {
   float:left;
 }
 div#yield {
-  width:60%;
-  margin-left:auto;
-  margin-right:auto;
+  width:100%;
   margin-top:20px;
   margin-bottom:20px;
 }

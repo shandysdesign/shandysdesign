@@ -3,10 +3,13 @@
 div#contact {
   background:white url(image_path("contact_bg.png")) no-repeat center;
   height:500px;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 div#contact_content {
-  width:60%;
+  width:100%;
   margin-left:auto;
   margin-right:auto;
   margin-top:100px;

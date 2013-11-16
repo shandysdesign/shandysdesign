@@ -1,10 +1,14 @@
 @import "common";
 
 div#welcome_content {
-  background:white url(image_path("welcome_bg.png")) no-repeat center;
-  width:100%;
+  width:60%;
   height:300px;
   margin-left:auto;
   margin-right:auto;
+  div#welcome_img {
+    width:591px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
 

@@ -1,4 +1,4 @@
-%div.content
+%div.content.item
   -@item.assets.each_slice(3) do |group|
     -group.each do |asset|
       =image_tag asset.image.url(:medium)
