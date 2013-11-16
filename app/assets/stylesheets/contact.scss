@@ -1,8 +1,7 @@
 @import "common";
 
 div#contact {
-  background:url(image_path("contact_bg.png")) no-repeat center;
-  background-color:white;
+  background:white url(image_path("contact_bg.png")) no-repeat center;
   height:500px;
 }
 
