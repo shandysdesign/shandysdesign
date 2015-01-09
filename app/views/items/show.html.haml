@@ -3,7 +3,7 @@
     -group.each do |asset|
       =image_tag asset.image.url(:medium)
   %p=@item.name
-  %p=number_to_currency(@item.price)
+  %p=item_price(@item)
   %p=@item.description
   %p
     Contact #{mail_to 'shandysdesign@gmail.com'} or 720-255-1499 to see this item. Looking forward to hearing from you!
