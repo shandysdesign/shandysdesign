@@ -1,9 +1,9 @@
 module ItemsHelper
   def item_price(item)
-    if item.sold?
-      number_to_currency(item.price)+" (SOLD)"
-    else
+    if item.available?
       number_to_currency(item.price)
+    else
+      number_to_currency(item.price)+" (#{item.status.upcase})"
     end
   end
 

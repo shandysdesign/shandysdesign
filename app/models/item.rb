@@ -11,8 +11,8 @@ class Item < ActiveRecord::Base
     self.assets.where(main:true).first
   end
 
-  def sold?
-    self.status=="Sold" ? true : false
+  def available?
+    self.status=="Available" ? true : false
   end
 end
 
