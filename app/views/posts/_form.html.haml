@@ -1,0 +1,7 @@
+=form_for @post, :html => {:multipart=>true} do |f|
+  %div
+    %p
+      =f.label :title
+      =f.text_field :title
+    %p=f.cktext_area :content
+    %p=f.submit

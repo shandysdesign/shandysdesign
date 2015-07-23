@@ -30,7 +30,7 @@ div#logo {
   margin-right:auto;
 }
 div#header_links {
-  width:399px;
+  width:540px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -42,38 +42,4 @@ div#yield {
   width:100%;
   margin-top:20px;
   margin-bottom:20px;
-}
-div.content {
-  font-family:$content_font;
-  font-size:18px;
-  padding:15px;
-  background-color:white;
-  border: 5px solid $red;
-  border-radius: 20px;
-  label {
-    display:inline-block;
-    width:100px;
-  }
-  input[type=text] {
-    border: 2px solid $red;
-    height:20px;
-    width:300px;
-    font-family:$content_font;
-    font-size:18px;
-    padding:5px;
-    color:$red;
-  }
-  textarea {
-    border: 2px solid $red;
-    height:100px;
-    width:400px;
-    font-family:$content_font;
-    font-size:18px;
-    padding:5px;
-    color:$red;
-  }
-  select {
-    height:20px;
-    width:200px;
-  }
 }
