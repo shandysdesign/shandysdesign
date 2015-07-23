@@ -15,4 +15,3 @@
 /config/environments/production.rb
 
 /public/system/*
-/public/ckeditor_assets/*
