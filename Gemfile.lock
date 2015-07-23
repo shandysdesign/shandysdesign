@@ -192,7 +192,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
-  paperclip (~> 3.0)
+  paperclip
   rails (= 4.0.1)
   rspec-rails
   sass-rails (~> 4.0.0)

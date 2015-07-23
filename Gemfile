@@ -7,7 +7,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'haml-rails'
 
 gem 'devise'
-gem 'paperclip', '~> 3.0'
+gem 'paperclip'
 gem 'ckeditor'
 
 # Use Uglifier as compressor for JavaScript assets
