@@ -3,6 +3,7 @@ class Asset < ActiveRecord::Base
   has_attached_file :image,
                     :styles => { :medium => ["300x300>", :png] },
                     :convert_options => {:medium => Proc.new{self.convert_options}}
+  validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   def self.convert_options(px = 15)
     trans = ""
