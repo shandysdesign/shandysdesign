@@ -10,7 +10,7 @@
     %p=f.text_area :description
     %p
       =f.label :status
-      =f.select :status,options_for_select(["Available","Reserved","Sold"],@item.status)
+      =f.select :status,options_for_select(["Available","Reserved","Sold","Removed"],@item.status)
     %p
       Photos
       %div#item_assets

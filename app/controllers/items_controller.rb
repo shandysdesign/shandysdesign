@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_filter :find_item, :only => [:show, :edit, :update]
 
   def index
-    @items = Item.all
+    @items = Item.where(("status != 'Removed'"))
   end
 
   def new
