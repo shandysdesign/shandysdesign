@@ -1,9 +1,0 @@
--@item.assets.each do |asset|
-  %div.asset[asset]
-    %p
-      =radio_button_tag asset,:main,asset.main?,class:"radio_main"
-      =image_tag asset.image.url(:medium)
-      %span.asset_id=asset.id
-      %span.item_id=@item.id
-      -unless asset.main?
-        %span.delete_asset="Delete"

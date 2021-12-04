@@ -1,8 +1,0 @@
-%div.content.item
-  %p.image=image_tag main_item(item)
-  %p=link_to item.name, item_path(item)
-  %p=item_price(item)
-  %p=item.description
-  -if user_signed_in?
-    %p=link_to "[Edit]",edit_item_path(item)
-  %p.clear

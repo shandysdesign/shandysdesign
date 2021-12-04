@@ -1,6 +1,0 @@
-%div.content.post
-  %p=link_to post.title, post_path(post)
-  %p=sanitize post.content
-  -if user_signed_in?
-    %p=link_to "[Edit]", edit_post_path(post)
-  %p.clear
