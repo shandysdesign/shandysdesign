@@ -1,0 +1,10 @@
+@import 'variables';
+
+#header {
+  background-color: $blue;
+
+  #header-links {
+    display: flex;
+    justify-content: center;
+  }
+}

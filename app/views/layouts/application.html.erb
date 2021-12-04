@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t('site.title') %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="<%= [controller_name.dasherize, action_name.dasherize].join('-') %>">
+    <div id="header">
+      <div id="logo"><%= link_to image_tag('logo.png', alt: t('site.title')), root_path %></div>
+      <div id="header-links">
+        <div class="header-link">
+          <%= link_to image_tag('about.png', alt: t('site.about')), about_index_path %>
+        </div>
+        <div class="header-link">
+          <%= link_to image_tag('inventory.png', alt: t('site.inventory')), items_path %>
+        </div>
+        <div class="header-link">
+          <%= link_to image_tag('contact.png', alt: t('site.contact')), contact_index_path %>
+        </div>
+      </div>
+    </div>
+    <div id="yield">
+      <%= yield %>
+    </div>
+  </body>
+</html>

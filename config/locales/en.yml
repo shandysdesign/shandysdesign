@@ -1,0 +1,21 @@
+en:
+  site:
+    title: Shandy's Design
+    about: About
+    inventory: Inventory
+    contact: Contact
+  about:
+    index:
+      about: >
+        Shandy designs and builds in beautiful Breckenridge, Colorado. Delivery is free anywhere
+        in Colorado. For other locations please ask for delivery options.
+      contact: Contact Shandy at
+  contact:
+    index:
+      contact: >
+        Contact Shandy to arrange a showing or to place a custom order. Please feel free to ask
+        questions!
+      email: 'Email:'
+  items:
+    show:
+      contact_html: Contact <a href="mailto:%{email}">%{email}</a> with questions and orders

@@ -1,0 +1,21 @@
+body.about-index, body.contact-index {
+  div.content {
+    background: white url(image_path("contact_bg.png")) no-repeat center;
+    height: 500px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div#contact-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    p {
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}

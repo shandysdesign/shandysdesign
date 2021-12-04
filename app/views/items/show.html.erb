@@ -1,0 +1,11 @@
+<div class="content">
+  <div class="images">
+    <% @item.photos.each do |photo| %>
+      <%= image_tag url_for(photo) %>
+    <% end %>
+  </div>
+  <p><%= @item.name %></p>
+  <p><%= number_to_currency(@item.price) %></p>
+  <p><%= @item.description %></p>
+  <p><%= t('.contact_html', email: 'shandysdesign@gmail.com') %></p>
+</div>
